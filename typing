@@ -1,0 +1,37 @@
+import time
+import pyautogui
+import os, sys, subprocess
+
+
+def open_file(filename):
+    if sys.platform == "win32":
+        os.startfile(filename)
+    else:
+        opener = "open" if sys.platform == "darwin" else "xdg-open"
+        subprocess.call([opener, filename])
+
+def typing():
+    time.sleep(10)
+
+    #os.startfile("C:\Program Files(x86)\Microsoft Office\root\Office16\WINWORD.EXE")
+
+    open_file("text_test.txt")
+
+    pyautogui.moveTo(500,100, duration=1)
+
+    time.sleep(1)
+    #pyautogui.dragRel(100, 0, duration=1)
+
+    pyautogui.click(500,100)
+
+    time.sleep(1)
+    pyautogui.typewrite("Hello, thank you for holding.")
+    time.sleep(1)
+    #pyautogui.hotkey("ctrlleft", "a")
+    #pyautogui.typewrite(["delete"])
+
+    #os.stopfile("C:\Program Files(x86)\Microsoft Office\root\Office16\WINWORD.EXE")
+i=0
+while i<10:
+    typing()
+    i+=1
