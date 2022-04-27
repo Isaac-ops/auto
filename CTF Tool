@@ -44,10 +44,13 @@ def button_command():
 
 def confirmation():
     root=Tk()
-    result=tkinter.messagebox.askquestion('Execel','Do you want to export this to an excel?')
+    result=tkinter.messagebox.askquestion('Text','Do you want to export this to text file?')
     if result == 'yes':
-        theLabel=Label(root,text="Copying to excel.")
-        theLabel.pack()
+        theLabel=Label(root,text="Creating text file with results.")
+        f=open("CTF_Tool_Results.txt","w+")
+        for i in range(5):
+            f.write("This is where the results would go %d\r\n" %(i+1))
+        f.close()
     else:
         root.destroy()
     root.mainloop()
@@ -90,4 +93,3 @@ elif pick == 'PDF Reader':
     confirmation()
 elif pick == 'cipher':
     print('error')
-print("test")
