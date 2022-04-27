@@ -7,7 +7,7 @@ import webbrowser
 import PyPDF2
 from time import sleep
 from tkinter import ttk
-import sys
+from sys import exit
 
 teams=range(100)
 
@@ -54,6 +54,7 @@ def confirmation():
             i+1
         f.close()
         root.destroy()
+        exit()
     else:
         root.destroy()
     root.mainloop()
@@ -91,11 +92,11 @@ pick_box()
 if pick == 'Port Scanner':
     port_scanner()
     confirmation()
-    sys.exit()
+    exit()
 elif pick == 'PDF Reader':
     pdf_reader()
     confirmation()
-    sys.exit()
+    exit()
 elif pick == 'cipher':
     print('error')
-    sys.exit()
+    exit()
