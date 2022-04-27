@@ -7,6 +7,7 @@ import webbrowser
 import PyPDF2
 from time import sleep
 from tkinter import ttk
+import sys
 
 teams=range(100)
 
@@ -49,8 +50,10 @@ def confirmation():
         theLabel=Label(root,text="Creating text file with results.")
         f=open("CTF_Tool_Results.txt","w+")
         for i in range(5):
-            f.write("This is where the results would go %d\r\n" %(i+1))
+            f.write("This is where the results would go")
+            i+1
         f.close()
+        root.destroy()
     else:
         root.destroy()
     root.mainloop()
@@ -88,8 +91,11 @@ pick_box()
 if pick == 'Port Scanner':
     port_scanner()
     confirmation()
+    sys.exit()
 elif pick == 'PDF Reader':
     pdf_reader()
     confirmation()
+    sys.exit()
 elif pick == 'cipher':
     print('error')
+    sys.exit()
