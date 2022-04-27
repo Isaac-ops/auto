@@ -1,0 +1,85 @@
+import tkinter as tk
+from tkinter import *
+from tkinter import simpledialog
+import webbrowser
+
+
+
+def pick_box():
+    root = Tk()
+
+    def choice_box(a):
+        global pick
+        pick = a
+        root.destroy()
+    root.title("Website Opener")
+    choices = ['Default sites','Custom']
+    variable = StringVar(root)
+    variable.set('Default sites')
+    w =OptionMenu(root, variable, *choices, command=choice_box)
+    w.pack()
+    mainloop()
+
+
+def selection_box():
+    options = [
+    "amazon",
+    "youtube",
+    "google"
+    ]
+
+    master = Tk()
+    master.title("Default Websites")
+    master.geometry( "200x200")
+    variable = StringVar(master)
+    variable.set(options[0]) #This will be the default value
+
+    def selection(value):
+        global choice
+        choice = value
+        master.destroy()
+
+    
+    w = OptionMenu(master, variable, *options, command=selection)
+    w.pack()
+
+    def ok():
+        print ("The selected value is:" +variable.get())
+
+    button = Button(master, text="OK", command=ok)
+    button.pack()
+
+    mainloop()
+
+    if choice=="amazon":
+        print("amazon")
+        webbrowser.open('https://amazon.com')
+    elif choice=="youtube":
+        print("youtube")
+        webbrowser.open('https://youtube.com')
+    elif choice=="google":
+        print('google')
+        webbrowser.open('https://google.com')
+    else:
+        print("Error")
+
+def custom():
+    master=tk.Tk()
+    master.withdraw()
+
+    input = simpledialog.askstring(title="Test", prompt="What website do you want to visit?")
+
+    website_input="https://"+input+".com"
+    print(website_input)
+    webbrowser.open(website_input)
+    
+    print("Hello",input)
+
+pick_box()
+
+if pick=="Default sites":
+    selection_box()
+elif pick=="Custom":
+    custom()
+else:
+    print("error")
