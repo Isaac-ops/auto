@@ -3,7 +3,6 @@ from tkinter import *
 import tkinter.messagebox
 from tkinter import messagebox
 from tkinter import simpledialog
-import webbrowser
 import PyPDF2
 from time import sleep
 from tkinter import ttk
@@ -47,10 +46,21 @@ def confirmation():
     root=Tk()
     result=tkinter.messagebox.askquestion('Text','Do you want to export this to text file?')
     if result == 'yes':
-        theLabel=Label(root,text="Creating text file with results.")
+        popup=tk.Toplevel()
+        tk.Label(popup, text="Creating text file with results.").grid(row=0,column=0)
+        progress=0
+        progress_var=tk.DoubleVar()
+        progress_bar=ttk.Progressbar(popup,variable=progress_var, maximum=100)
+        progress_bar.grid(row=1, column=0)
+        popup.pack_slaves()
+        progress_step = float(100.0/len(teams))
         f=open("CTF_Tool_Results.txt","w+")
         for i in range(5):
             f.write("This is where the results would go")
+            popup.update()
+            sleep(1)
+            progress += progress_step
+            progress_var.set(progress)
             i+1
         f.close()
         root.destroy()
