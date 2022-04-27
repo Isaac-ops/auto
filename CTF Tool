@@ -7,15 +7,38 @@ import PyPDF2
 from time import sleep
 from tkinter import ttk
 from sys import exit
+import socket
+import subprocess
+import sys
 
 
+port_scanning_results=[]
 
 def port_scanner():
     master=tk.Tk()
     master.withdraw()
-    ip_a = simpledialog.askstring(title="PDF Name", prompt="What is the host that will be scanned?")
-    print(ip_a)
+    global Host
+    ip_a = simpledialog.askstring(title="Host", prompt="What is the host that will be scanned?")
+    Host = ip_a
 
+def scanner():
+    remoteServerIP = socket.gethostbyname(Host)
+    try:
+        for port in range(1,1025):
+            sock = sock.socket(socket.AF_INET, socket.SOCK_STREAM)
+            result = sock.connect_ex((remoteServerIP, port))
+            if result == 0:
+                port_scanning_results += "Port {}:     Open".format(port)
+            sock.close()
+    except KeyboardInterrupt:
+        print("You pressed Ctrl+C")
+        sys.exit()
+    except socket.gaierror:
+        print("Hostname could not be resolved. Exiting")
+        sys.exit()
+    except socket.error:
+        print("Couldn't connect to server")
+        sys.exit()
 
 ##def button_command():
 ##    popup=tk.Toplevel()
@@ -100,6 +123,7 @@ def pdf_reader():
 pick_box()
 if pick == 'Port Scanner':
     port_scanner()
+    print(Host)
     confirmation()
     exit()
 elif pick == 'PDF Reader':
