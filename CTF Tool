@@ -105,7 +105,7 @@ def scanner_confirmation():
         progress_bar.grid(row=1, column=0)
         popup.pack_slaves()
         progress_step = float(100.0/len(port_scanning_results))
-        with open('Scanning_Results','w') as filehandle:
+        with open('Scanning_Results.txt','w') as filehandle:
             for port_scan in port_scanning_results:
                 filehandle.write('%s\n' % port_scan)
                 popup.update()
@@ -144,19 +144,43 @@ def pdf_reader():
     print(pdfReader.numPages)
     pageObj = pdfReader.getPage(0)
     global pdf_message
-    pdf_message=(pageObj.extractText())
+    pdf_message=[]
+    pdf_message+=[(pageObj.extractText())]
 
+def pdf_confirmation():
+    root=Tk()
+    result=tkinter.messagebox.askquestion('Text','Do you want to export this to text file?')
+    if result == 'yes':
+        popup=tk.Toplevel()
+        tk.Label(popup, text="Creating text file with results.").grid(row=0,column=0)
+        progress=0
+        progress_var=tk.DoubleVar()
+        progress_bar=ttk.Progressbar(popup,variable=progress_var, maximum=100)
+        progress_bar.grid(row=1, column=0)
+        popup.pack_slaves()
+        progress_step = float(100.0/len(pdf_message))
+        with open('PDF_Results.txt','w') as filehandle:
+            for pdf in pdf_message:
+                filehandle.write('%s\n' % pdf)
+                popup.update()
+                sleep(1)
+                progress += progress_step
+                progress_var.set(progress)
+        root.destroy()
+        exit()
+    else:
+        root.destroy()
+    root.mainloop()
 
 pick_box()
 if pick == 'Port Scanner':
     port_scanner()
     scanner()
-    print(port_scanning_results)
     scanner_confirmation()
     exit()
 elif pick == 'PDF Reader':
     pdf_reader()
-    confirmation()
+    pdf_confirmation()
     exit()
 elif pick == 'cipher':
     print('error')
