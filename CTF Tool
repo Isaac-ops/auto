@@ -3,7 +3,7 @@ from tkinter import *
 import tkinter.messagebox
 from tkinter import messagebox
 from tkinter import simpledialog
-import PyPDF2
+import pdfplumber
 from time import sleep
 from tkinter import ttk
 from sys import exit
@@ -139,13 +139,13 @@ def pdf_reader():
     master=tk.Tk()
     master.withdraw()
     input = simpledialog.askstring(title="PDF Name", prompt="What PDF do you want to pull the Text from?")
-    pdfFileObj = open(f'{input}','rb')
-    pdfReader = PyPDF2.PdfFileReader(pdfFileObj)
-    print(pdfReader.numPages)
-    pageObj = pdfReader.getPage(0)
-    global pdf_message
-    pdf_message=[]
-    pdf_message+=[(pageObj.extractText())]
+    with pdfplumber.open(f'{input}') as pdf:
+        first_page = pdf.pages[0]
+        global pdf_message
+        pdf_message=[]
+        text=first_page.extract_text()
+        pdf_message += [text]
+
 
 def pdf_confirmation():
     root=Tk()
@@ -160,8 +160,8 @@ def pdf_confirmation():
         popup.pack_slaves()
         progress_step = float(100.0/len(pdf_message))
         with open('PDF_Results.txt','w') as filehandle:
-            for pdf in pdf_message:
-                filehandle.write('%s\n' % pdf)
+            for pdf_write in pdf_message:
+                filehandle.write('%s\n' % pdf_write)
                 popup.update()
                 sleep(1)
                 progress += progress_step
