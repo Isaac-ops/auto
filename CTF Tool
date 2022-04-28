@@ -93,6 +93,31 @@ def confirmation():
         root.destroy()
     root.mainloop()
 
+def scanner_confirmation():
+    root=Tk()
+    result=tkinter.messagebox.askquestion('Text','Do you want to export this to text file?')
+    if result == 'yes':
+        popup=tk.Toplevel()
+        tk.Label(popup, text="Creating text file with results.").grid(row=0,column=0)
+        progress=0
+        progress_var=tk.DoubleVar()
+        progress_bar=ttk.Progressbar(popup,variable=progress_var, maximum=100)
+        progress_bar.grid(row=1, column=0)
+        popup.pack_slaves()
+        progress_step = float(100.0/len(port_scanning_results))
+        with open('Scanning_Results','w') as filehandle:
+            for port_scan in port_scanning_results:
+                filehandle.write('%s\n' % port_scan)
+                popup.update()
+                sleep(1)
+                progress += progress_step
+                progress_var.set(progress)
+        root.destroy()
+        exit()
+    else:
+        root.destroy()
+    root.mainloop()
+
 ##// Commiting out a lot of the stuff I used for practice //**
 def pick_box():
     root = Tk()
@@ -127,7 +152,7 @@ if pick == 'Port Scanner':
     port_scanner()
     scanner()
     print(port_scanning_results)
-    confirmation()
+    scanner_confirmation()
     exit()
 elif pick == 'PDF Reader':
     pdf_reader()
