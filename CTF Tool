@@ -28,7 +28,7 @@ def scanner():
             sock = sock.socket(socket.AF_INET, socket.SOCK_STREAM)
             result = sock.connect_ex((remoteServerIP, port))
             if result == 0:
-                port_scanning_results += "Port {}:     Open".format(port)
+                port_scanning_results += ["Port {}:     Open".format(port)]
             sock.close()
     except KeyboardInterrupt:
         print("You pressed Ctrl+C")
