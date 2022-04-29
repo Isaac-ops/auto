@@ -1,0 +1,78 @@
+from copyreg import pickle
+import socket
+from telnetlib import IP
+import threading
+import tkinter as Tk
+from tkinter import *
+from tkinter import simpledialog
+import tkinter as tk
+
+def tcp_client():
+    target_host = "www.google.com"
+    target_port = 80
+
+    client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+
+    client.connect((target_host,target_port))
+
+    client.send(b"GET / HTTP/1.1\r\nHost: google.com\r\n\r\n")
+
+    response =client.recv(4096)
+
+    print(response.decode())
+    client.close()
+
+def tcp_server():
+#    Server_ip = '0.0.0.0'
+#    Server_port = '9998'
+
+    def main():
+        server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        server.bind((Server_ip, Server_port))
+        server.listen(5)
+        print(f'[*] Listening on {Server_ip}:{Server_port}')
+        while True:
+            client, address = server.accept()
+            print(f'[*] Accepted connection from {address[0]}:{address[1]}')
+            client_handler = threading.Thread(target=handle_client, args=(client,))
+            client_handler.start()
+    def handle_client(client_socket):
+        with client_socket as sock:
+            request= sock.recv(1024)
+            print(f'[*] Received: {request.decode("utf-8")}')
+            sock.send(b'ACK')
+    if __name__ == '__main__':
+        main()
+
+def input_box():
+    master=tk.Tk()
+    master.withdraw()
+    global Server_ip
+    global Server_port
+    a=simpledialog.askstring(title="TCP Server IP",prompt="Enter the IP Address you want to host the TCP Server on")
+    b=simpledialog.askstring(title="TCP Server Port",prompt="Enter the Port you want to host the TCP Server on")
+    Server_ip = 'a'
+    Server_port = 'b'
+
+def choice_box():
+    master=Tk()
+    def chosen(a):
+        global pick
+        pick = a
+        master.destroy()
+    master.title("TCP Server")
+    choices=['TCP Server','TCP Client']
+    variable = StringVar(master)
+    variable.set('TCP Server')
+    box = OptionMenu(master,variable,*choices,command=chosen)
+    box.pack()
+    mainloop()
+
+choice_box()
+if pick == 'TCP Server':
+    input_box()
+    tcp_server()
+#elif pick == 'TCP Client':
+
+else:
+    print("error")
