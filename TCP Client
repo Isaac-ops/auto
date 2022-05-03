@@ -16,7 +16,7 @@ def tcp_client():
 
     client.connect((Target_ip,Target_port))
 
-    client.send(b"GET / HTTP/1.1\r\nHost: google.com\r\n\r\n")
+    client.send(b"Hello there.")
 
     response =client.recv(4096)
 
@@ -93,7 +93,8 @@ choice_box()
 if pick == 'TCP Server':
     server_input_box()
     tcp_server()
-#elif pick == 'TCP Client':
-
+elif pick == 'TCP Client':
+    target_input_box()
+    tcp_client()
 else:
     print("error")
