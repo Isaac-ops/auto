@@ -71,9 +71,9 @@ def target_input_box():
 #    print(int_address)
 #    byte_address=int_address.to_bytes
     Target_ip = (f'{a}')
-    print(Server_ip)
+    print(Target_ip)
     Target_port = (b)
-    print(Server_port)
+    print(Target_port)
 
 def choice_box():
     master=Tk()
