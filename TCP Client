@@ -6,14 +6,15 @@ import tkinter as Tk
 from tkinter import *
 from tkinter import simpledialog
 import tkinter as tk
+import ipaddress
 
 def tcp_client():
-    target_host = "www.google.com"
-    target_port = 80
+#    target_host = "www.google.com"
+#    target_port = 80
 
     client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
-    client.connect((target_host,target_port))
+    client.connect((Target_ip,Target_port))
 
     client.send(b"GET / HTTP/1.1\r\nHost: google.com\r\n\r\n")
 
@@ -44,15 +45,35 @@ def tcp_server():
     if __name__ == '__main__':
         main()
 
-def input_box():
+def server_input_box():
     master=tk.Tk()
     master.withdraw()
     global Server_ip
     global Server_port
     a=simpledialog.askstring(title="TCP Server IP",prompt="Enter the IP Address you want to host the TCP Server on")
-    b=simpledialog.askstring(title="TCP Server Port",prompt="Enter the Port you want to host the TCP Server on")
-    Server_ip = 'a'
-    Server_port = 'b'
+    b=simpledialog.askinteger(title="TCP Server Port",prompt="Enter the Port you want to host the TCP Server on")
+#    int_address=int(ipaddress.ip_address(a))
+#    print(int_address)
+#    byte_address=int_address.to_bytes
+    Server_ip = (f'{a}')
+    print(Server_ip)
+    Server_port = (b)
+    print(Server_port)
+
+def target_input_box():
+    master=tk.Tk()
+    master.withdraw()
+    global Target_ip
+    global Target_port
+    a=simpledialog.askstring(title="TCP Client IP",prompt="Enter the IP Address of the host you want to connect to")
+    b=simpledialog.askinteger(title="TCP Client Port",prompt="Enter the Port of the host you want to connect to")
+#    int_address=int(ipaddress.ip_address(a))
+#    print(int_address)
+#    byte_address=int_address.to_bytes
+    Target_ip = (f'{a}')
+    print(Server_ip)
+    Target_port = (b)
+    print(Server_port)
 
 def choice_box():
     master=Tk()
@@ -70,7 +91,7 @@ def choice_box():
 
 choice_box()
 if pick == 'TCP Server':
-    input_box()
+    server_input_box()
     tcp_server()
 #elif pick == 'TCP Client':
 
