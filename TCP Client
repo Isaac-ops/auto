@@ -17,6 +17,7 @@ def tcp_client():
     client.connect((Target_ip,Target_port))
 
     client.send(b"Hello there.")
+    client.send(b"What all can I send across I wonder")
 
     response =client.recv(4096)
 
