@@ -1,4 +1,7 @@
 from copyreg import pickle
+from readline import set_pre_input_hook 
+import tqdm
+import os
 import socket
 from telnetlib import IP
 import threading
@@ -8,6 +11,8 @@ from tkinter import simpledialog
 import tkinter as tk
 import ipaddress
 
+SEPARATOR = "<SEPERATOR>"
+BUFFER_SIZE=4096
 def tcp_client():
 #    target_host = "www.google.com"
 #    target_port = 80
@@ -15,11 +20,21 @@ def tcp_client():
     client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
     client.connect((Target_ip,Target_port))
-
-    client.send(b"Hello there.")
-    client.send(b"What all can I send across I wonder")
-
-    response =client.recv(4096)
+    filename="test.txt"
+    filesize=os.path.getsize(filename)
+    client.send(f"{filename}{SEPARATOR}{filesize}".encode())
+#    client.send(b"Hello there.")
+#    client.send(b"What all can I send across I wonder")
+    progress=tqdm.tqdm(range(filesize), f"Sending {filename}", unit="B", unit_scale=True,unit_divisor=1024)
+    with open(filename, "rb") as f:
+        while True:
+            bytes_read = f.read(BUFFER_SIZE)
+            if not bytes_read:
+                break
+            client.sendall(bytes_read)
+            progress.update(len(bytes_read))
+    
+    response =client.recv(BUFFER_SIZE)
 
     print(response.decode())
     client.close()
@@ -40,6 +55,18 @@ def tcp_server():
             client_handler.start()
     def handle_client(client_socket):
         with client_socket as sock:
+            received=client_socket.recv(BUFFER_SIZE).decode()
+            filename, filesize = received.split(SEPARATOR)
+            filename=os.path.basename(filename)
+            filesize=int(filesize)
+            progress = tqdm.tqdm(range(filesize), f"Receiving {filename}", unit= "B", unit_scale=True, unit_divisor=1024)
+            with open(filename, "wb") as f:
+                while True:
+                    bytes_read=client_socket.recv(BUFFER_SIZE)
+                    if not bytes_read:
+                        break
+                    f.write(bytes_read)
+                    progress.update(len(bytes_read))
             request= sock.recv(1024)
             print(f'[*] Received: {request.decode("utf-8")}')
             sock.send(b'ACK')
