@@ -1,8 +1,14 @@
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
+from time import sleep
 
 driver = webdriver.Chrome('/home/jotate/Documents/auto/chromedriver')
 
-driver.get('https://google.com')
-print(driver.title)
-driver.quit()
+driver.get('https://bestbuy.com')
+m = driver.find_element_by_class_name("search-input")
+m.send_keys("nvidia rtx")
+m.send_keys(Keys.RETURN)
+d = driver.find_element_by_xpath("//*[.='ADD_TO_CART']")
+d.click()
+sleep(15)
+#driver.quit()
