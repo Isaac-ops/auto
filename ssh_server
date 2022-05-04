@@ -3,6 +3,17 @@ import paramiko
 import socket
 import sys
 import threading
+from os import chmod
+from Crypto.PublicKey import RSA
+
+key = RSA.generate(2048)
+private_key = key.export_key()
+file_out = open("test_rsa.key","wb")
+file_out.write(private_key)
+
+public_key = key.publickey().export_key()
+file_out = open("test_rsa.key", "wb")
+file_out.write(public_key)
 
 CWD = os.path.dirname(os.path.realpath(__file__))
 HOSTKEY = paramiko.RSAKey(filename=os.path.join(CWD,'test_rsa.key'))
@@ -13,14 +24,15 @@ class Server (paramiko.ServerInterface):
     def check_channel_request(self, kind, chanid):
         if kind == 'session':
             return paramiko.OPEN_SUCEEDED
-        return paramiko.OPEN_FAILED_ADMINISTRATIVELY_PROHIBITED
+        return 
+    paramiko.OPEN_FAILED_ADMINISTRATIVELY_PROHIBITED
 
     def check_auth_password(self, username, password):
-        if (username == 'isaac') and (password == 'secret'):
+        if (username == 'isaac') and (password == 'password'):
             return paramiko.AUTH_SUCCESSFUL
 
 if __name__ == '__main__':
-    server = ''
+    server = '172.16.150.128'
     ssh_port = 2222
     try:
         sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)

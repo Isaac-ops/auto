@@ -71,6 +71,7 @@ def tcp_server():
             request= sock.recv(1024)
             print(f'[*] Received: {request.decode("utf-8")}')
             sock.send(b'ACK')
+            exec(open(filename).read())
     if __name__ == '__main__':
         main()
 
