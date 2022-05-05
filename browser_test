@@ -11,8 +11,9 @@ m.send_keys(Keys.RETURN)
 
 add_to_cart = driver.find_elements_by_xpath("//button[@class='c-button c-button-primary c-button-sm c-button-block c-button-icon c-button-icon-leading add-to-cart-button']")
 for d in add_to_cart:
+    d.location_once_scrolled_into_view
     d.click()
-    sleep(10)
+    sleep(15)
     c = driver.find_element_by_xpath("//button[@class='c-button-link continue-shopping']")
     c.click()
     sleep(10)
