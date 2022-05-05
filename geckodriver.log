@@ -1,0 +1,277 @@
+1651765394329	geckodriver	INFO	Listening on 127.0.0.1:34993
+1651765394349	mozrunner::runner	INFO	Running command: "/snap/bin/firefox" "--marionette" "--remote-debugging-port" "59007" "-no-remote" "-profile" "/tmp/rust_mozprofileViyiaZ"
+1651765517127	geckodriver	INFO	Listening on 127.0.0.1:59505
+1651765517646	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "36073" "-no-remote" "-profile" "/tmp/rust_mozprofile52sXK0"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1651765519896	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile52sXK0/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:36073/devtools/browser/6d338e4f-5abd-4ea2-bcc4-7b92fe4e2514
+1651765525356	Marionette	INFO	Listening on port 45743
+1651765525466	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://www.bestbuy.com/iQT3UZ/MJ/WC/k_Q-/uD6Q2Xtl2w/OJurDfQzYk/fUEcPjI/A3s/mfHBgW0c, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+[GFX1-]: Couldn't sanitize RENDERER device: SVGA3D; build: RELEASE;  LLVM;
+JavaScript warning: https://www.bestbuy.com/iQT3UZ/MJ/WC/k_Q-/uD6Q2Xtl2w/OJurDfQzYk/fUEcPjI/A3s/mfHBgW0c, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+[GFX1-]: Couldn't sanitize RENDERER device: SVGA3D; build: RELEASE;  LLVM;
+JavaScript error: https://assets.bbystatic.com/shop/ninja/dist/client/client-f5d10e1f1d2a02b1eccb216e0d283f29.mjs, line 65: TypeError: window.__iasPET.setTargetingForGPT is not a function
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/NHksFvpwOA_e7xJte31GpOZsvVxHGuXQeGuPktjycGc.js line 1 > eval line 7731 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+[GFX1-]: Couldn't sanitize RENDERER device: SVGA3D; build: RELEASE;  LLVM;
+JavaScript error: https://www.bestbuy.com/~assets/bby/_com/analytics-dotcom/analyticsInit-490ed760b55cebb84ddb768ecebdd398.js, line 4: SyntaxError: An invalid or illegal string was specified
+JavaScript error: https://www.bestbuy.com/~assets/bby/_com/analytics-dotcom/analyticsInit-490ed760b55cebb84ddb768ecebdd398.js, line 4: SyntaxError: An invalid or illegal string was specified
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.bestbuy.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.bestbuy.com"
+1651765568249	Marionette	INFO	Stopped listening on port 45743
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+
+1651765572448	geckodriver	INFO	Listening on 127.0.0.1:53661
+1651765572973	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "45075" "-no-remote" "-profile" "/tmp/rust_mozprofileRt2m7u"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1651765574570	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileRt2m7u/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:45075/devtools/browser/ac8ce453-9755-43a2-92fd-0a89326757a5
+1651765578265	Marionette	INFO	Listening on port 46475
+1651765578354	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://www.bestbuy.com/iQT3UZ/MJ/WC/k_Q-/uD6Q2Xtl2w/OJurDfQzYk/fUEcPjI/A3s/mfHBgW0c, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+[GFX1-]: Couldn't sanitize RENDERER device: SVGA3D; build: RELEASE;  LLVM;
+JavaScript warning: https://www.bestbuy.com/iQT3UZ/MJ/WC/k_Q-/uD6Q2Xtl2w/OJurDfQzYk/fUEcPjI/A3s/mfHBgW0c, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+[GFX1-]: Couldn't sanitize RENDERER device: SVGA3D; build: RELEASE;  LLVM;
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/NHksFvpwOA_e7xJte31GpOZsvVxHGuXQeGuPktjycGc.js line 1 > eval line 7754 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+[GFX1-]: Couldn't sanitize RENDERER device: SVGA3D; build: RELEASE;  LLVM;
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.bestbuy.com"
+JavaScript error: https://www.bestbuy.com/~assets/bby/_com/analytics-dotcom/analyticsInit-490ed760b55cebb84ddb768ecebdd398.js, line 4: SyntaxError: An invalid or illegal string was specified
+JavaScript error: https://www.bestbuy.com/~assets/bby/_com/analytics-dotcom/analyticsInit-490ed760b55cebb84ddb768ecebdd398.js, line 4: SyntaxError: An invalid or illegal string was specified
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1651765615399	Marionette	INFO	Stopped listening on port 46475
+console.error: PushServiceWebSocket: 
+  _beginWSSetup: Not in shutdown state! Current state
+  3
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+
+###!!! [Child][PContentChild] Error: Send(msgname=PContent::Msg_ScriptError) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PHttpChannel::Msg_DeleteSelf) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PHttpChannel::Msg_DeleteSelf) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PHttpChannel::Msg_DeleteSelf) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PHttpChannel::Msg_DeleteSelf) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PHttpChannel::Msg_DeleteSelf) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: Send(msgname=PBrowser::Msg___delete__) Channel closing: too late to send/recv, messages will be lost
+
+ExceptionHandler::GenerateDump cloned child 43657
+ExceptionHandler::SendContinueSignalToChild sent continue signal to child
+ExceptionHandler::WaitForContinueSignal waiting for continue signal...
+1651765629508	geckodriver	INFO	Listening on 127.0.0.1:49089
+1651765630043	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "54325" "-no-remote" "-profile" "/tmp/rust_mozprofileI2yp21"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1651765631735	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileI2yp21/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:54325/devtools/browser/e29e0911-5a31-4d98-9494-0eddd7018100
+1651765635402	Marionette	INFO	Listening on port 41679
+1651765635520	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://www.bestbuy.com/iQT3UZ/MJ/WC/k_Q-/uD6Q2Xtl2w/OJurDfQzYk/fUEcPjI/A3s/mfHBgW0c, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+[GFX1-]: Couldn't sanitize RENDERER device: SVGA3D; build: RELEASE;  LLVM;
+JavaScript warning: https://www.bestbuy.com/iQT3UZ/MJ/WC/k_Q-/uD6Q2Xtl2w/OJurDfQzYk/fUEcPjI/A3s/mfHBgW0c, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+[GFX1-]: Couldn't sanitize RENDERER device: SVGA3D; build: RELEASE;  LLVM;
+JavaScript warning: https://pagead2.googlesyndication.com/bg/NHksFvpwOA_e7xJte31GpOZsvVxHGuXQeGuPktjycGc.js line 1 > eval line 3202 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+[GFX1-]: Couldn't sanitize RENDERER device: SVGA3D; build: RELEASE;  LLVM;
+1651765677837	Marionette	INFO	Stopped listening on port 41679
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1651765683280	geckodriver	INFO	Listening on 127.0.0.1:50847
+1651765683761	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "39109" "-no-remote" "-profile" "/tmp/rust_mozprofileSZRTJ0"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ExceptionHandler::GenerateDump cloned child 44248
+ExceptionHandler::SendContinueSignalToChild sent continue signal to child
+ExceptionHandler::WaitForContinueSignal waiting for continue signal...
+1651765686882	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileSZRTJ0/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:39109/devtools/browser/b2806bec-2c70-4268-a9a4-6f24b5d1a22d
+1651765689728	Marionette	INFO	Listening on port 42981
+1651765689903	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://www.bestbuy.com/iQT3UZ/MJ/WC/k_Q-/uD6Q2Xtl2w/OJurDfQzYk/fUEcPjI/A3s/mfHBgW0c, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+[GFX1-]: Couldn't sanitize RENDERER device: SVGA3D; build: RELEASE;  LLVM;
+JavaScript error: https://www.bestbuy.com/~assets/bby/_com/analytics-dotcom/analyticsInit-490ed760b55cebb84ddb768ecebdd398.js, line 4: SyntaxError: An invalid or illegal string was specified
+JavaScript error: https://www.bestbuy.com/~assets/bby/_com/analytics-dotcom/analyticsInit-490ed760b55cebb84ddb768ecebdd398.js, line 4: SyntaxError: An invalid or illegal string was specified
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://www.bestbuy.com/iQT3UZ/MJ/WC/k_Q-/uD6Q2Xtl2w/OJurDfQzYk/fUEcPjI/A3s/mfHBgW0c, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+[GFX1-]: Couldn't sanitize RENDERER device: SVGA3D; build: RELEASE;  LLVM;
+JavaScript warning: https://pagead2.googlesyndication.com/bg/NHksFvpwOA_e7xJte31GpOZsvVxHGuXQeGuPktjycGc.js line 1 > eval line 3375 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+[GFX1-]: Couldn't sanitize RENDERER device: SVGA3D; build: RELEASE;  LLVM;
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.bestbuy.com"
+JavaScript error: resource:///actors/ContextMenuChild.jsm, line 559: TypeError: doc is null
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://www.bestbuy.com/~assets/bby/_com/analytics-dotcom/analyticsInit-490ed760b55cebb84ddb768ecebdd398.js, line 4: SyntaxError: An invalid or illegal string was specified
+JavaScript error: https://www.bestbuy.com/~assets/bby/_com/analytics-dotcom/analyticsInit-490ed760b55cebb84ddb768ecebdd398.js, line 4: SyntaxError: An invalid or illegal string was specified
+1651765716617	Marionette	INFO	Stopped listening on port 42981
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PHttpChannel::Msg_DeleteSelf) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PHttpChannel::Msg_DeleteSelf) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PHttpChannel::Msg_DeleteSelf) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PHttpChannel::Msg_DeleteSelf) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PHttpChannel::Msg_DeleteSelf) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PHttpChannel::Msg_DeleteSelf) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PHttpChannel::Msg_DeleteSelf) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PHttpChannel::Msg_DeleteSelf) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PHttpChannel::Msg_DeleteSelf) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PHttpChannel::Msg_DeleteSelf) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PHttpChannel::Msg_DeleteSelf) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PHttpChannel::Msg_DeleteSelf) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PHttpChannel::Msg_DeleteSelf) Channel closing: too late to send/recv, messages will be lost
+
+1651765721326	geckodriver	INFO	Listening on 127.0.0.1:49147
+1651765721834	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "48117" "-no-remote" "-profile" "/tmp/rust_mozprofileQmgU1J"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1651765723612	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileQmgU1J/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:48117/devtools/browser/304213e2-7767-47b0-95b4-7ce9181e397c
+1651765726768	Marionette	INFO	Listening on port 41469
+1651765726797	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://www.bestbuy.com/iQT3UZ/MJ/WC/k_Q-/uD6Q2Xtl2w/OJurDfQzYk/fUEcPjI/A3s/mfHBgW0c, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+[GFX1-]: Couldn't sanitize RENDERER device: SVGA3D; build: RELEASE;  LLVM;
+JavaScript warning: https://www.bestbuy.com/iQT3UZ/MJ/WC/k_Q-/uD6Q2Xtl2w/OJurDfQzYk/fUEcPjI/A3s/mfHBgW0c, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+[GFX1-]: Couldn't sanitize RENDERER device: SVGA3D; build: RELEASE;  LLVM;
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/NHksFvpwOA_e7xJte31GpOZsvVxHGuXQeGuPktjycGc.js line 1 > eval line 340 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+[GFX1-]: Couldn't sanitize RENDERER device: SVGA3D; build: RELEASE;  LLVM;
+JavaScript error: https://www.bestbuy.com/~assets/bby/_com/analytics-dotcom/analyticsInit-490ed760b55cebb84ddb768ecebdd398.js, line 4: SyntaxError: An invalid or illegal string was specified
+JavaScript error: https://www.bestbuy.com/~assets/bby/_com/analytics-dotcom/analyticsInit-490ed760b55cebb84ddb768ecebdd398.js, line 4: SyntaxError: An invalid or illegal string was specified
+1651765776034	Marionette	INFO	Stopped listening on port 41469
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1651766037786	geckodriver	INFO	Listening on 127.0.0.1:60025
+1651766038334	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "56897" "-no-remote" "-profile" "/tmp/rust_mozprofileLDtZjC"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1651766039927	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileLDtZjC/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:56897/devtools/browser/3a3b1f91-487a-48c9-a14c-ba48d0ff5082
+1651766043212	Marionette	INFO	Listening on port 37401
+1651766043304	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://www.bestbuy.com/iQT3UZ/MJ/WC/k_Q-/uD6Q2Xtl2w/OJurDfQzYk/fUEcPjI/A3s/mfHBgW0c, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+[GFX1-]: Couldn't sanitize RENDERER device: SVGA3D; build: RELEASE;  LLVM;
+JavaScript error: https://www.bestbuy.com/~assets/bby/_com/analytics-dotcom/analyticsInit-490ed760b55cebb84ddb768ecebdd398.js, line 4: SyntaxError: An invalid or illegal string was specified
+JavaScript error: https://www.bestbuy.com/~assets/bby/_com/analytics-dotcom/analyticsInit-490ed760b55cebb84ddb768ecebdd398.js, line 4: SyntaxError: An invalid or illegal string was specified
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://www.bestbuy.com/iQT3UZ/MJ/WC/k_Q-/uD6Q2Xtl2w/OJurDfQzYk/fUEcPjI/A3s/mfHBgW0c, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+[GFX1-]: Couldn't sanitize RENDERER device: SVGA3D; build: RELEASE;  LLVM;
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.bestbuy.com"
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://www.bestbuy.com/~assets/bby/_com/analytics-dotcom/analyticsInit-490ed760b55cebb84ddb768ecebdd398.js, line 4: SyntaxError: An invalid or illegal string was specified
+JavaScript error: https://www.bestbuy.com/~assets/bby/_com/analytics-dotcom/analyticsInit-490ed760b55cebb84ddb768ecebdd398.js, line 4: SyntaxError: An invalid or illegal string was specified
+JavaScript warning: https://www.bestbuy.com/iQT3UZ/MJ/WC/k_Q-/uD6Q2Xtl2w/OJurDfQzYk/fUEcPjI/A3s/mfHBgW0c, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+[GFX1-]: Couldn't sanitize RENDERER device: SVGA3D; build: RELEASE;  LLVM;
+JavaScript error: https://www.bestbuy.com/~assets/bby/_com/analytics-dotcom/analyticsInit-490ed760b55cebb84ddb768ecebdd398.js, line 4: SyntaxError: An invalid or illegal string was specified
+JavaScript error: https://www.bestbuy.com/~assets/bby/_com/analytics-dotcom/analyticsInit-490ed760b55cebb84ddb768ecebdd398.js, line 4: SyntaxError: An invalid or illegal string was specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/NHksFvpwOA_e7xJte31GpOZsvVxHGuXQeGuPktjycGc.js line 1 > eval line 6946 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+[GFX1-]: Couldn't sanitize RENDERER device: SVGA3D; build: RELEASE;  LLVM;
+JavaScript warning: https://pagead2.googlesyndication.com/bg/NHksFvpwOA_e7xJte31GpOZsvVxHGuXQeGuPktjycGc.js line 1 > eval line 7043 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+[GFX1-]: Couldn't sanitize RENDERER device: SVGA3D; build: RELEASE;  LLVM;
+JavaScript error: chrome://global/content/elements/browser-custom-element.js, line 1629: Error: permitUnload is already running for this tab.
+WARNING: At least one completion condition is taking too long to complete. Conditions: [{"name":"SessionStore: flushing all windows","state":{"total":1,"current":0},"filename":"resource:///modules/sessionstore/SessionStore.jsm","lineNumber":2107,"stack":["resource:///modules/sessionstore/SessionStore.jsm:ssi_onQuitApplicationGranted:2107","resource:///modules/sessionstore/SessionStore.jsm:ssi_observe:1023","chrome://global/content/elements/browser-custom-element.js:permitUnload:1686","chrome://browser/content/browser.js:CanCloseWindow:8020","chrome://browser/content/browser.js:WindowIsClosing:8049"]}] Barrier: quit-application-granted
+1651766221815	Marionette	INFO	Stopped listening on port 37401
+JavaScript error: chrome://browser/content/browser.js, line 8026: uncaught exception: undefined
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1651767381319	geckodriver	INFO	Listening on 127.0.0.1:57933
+1651767381827	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "54387" "-no-remote" "-profile" "/tmp/rust_mozprofileRr9dlu"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1651767383161	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileRr9dlu/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:54387/devtools/browser/cf435e96-189d-47cb-ba27-336c39bd1e51
+1651767385409	Marionette	INFO	Listening on port 46691
+1651767385520	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://www.bestbuy.com/iQT3UZ/MJ/WC/k_Q-/uD6Q2Xtl2w/OJurDfQzYk/fUEcPjI/A3s/mfHBgW0c, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+[GFX1-]: Couldn't sanitize RENDERER device: SVGA3D; build: RELEASE;  LLVM;
+JavaScript warning: https://www.bestbuy.com/iQT3UZ/MJ/WC/k_Q-/uD6Q2Xtl2w/OJurDfQzYk/fUEcPjI/A3s/mfHBgW0c, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+[GFX1-]: Couldn't sanitize RENDERER device: SVGA3D; build: RELEASE;  LLVM;
+1651767401161	Marionette	INFO	Stopped listening on port 46691
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+1651767935363	geckodriver	INFO	Listening on 127.0.0.1:57769
+1651767935873	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "55077" "-no-remote" "-profile" "/tmp/rust_mozprofileecQ8y5"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1651767936593	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileecQ8y5/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:55077/devtools/browser/ea7bbf1f-d0bf-4da0-a7fd-52c6e35c420f
+1651767939060	Marionette	INFO	Listening on port 35077
+1651767939117	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1651767981688	geckodriver	INFO	Listening on 127.0.0.1:57419
+1651767982214	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "33761" "-no-remote" "-profile" "/tmp/rust_mozprofileyi7hU7"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1651767982988	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileyi7hU7/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:33761/devtools/browser/58d8af66-8fbf-4988-8018-5b26f5ee8fe9
+1651767985338	Marionette	INFO	Listening on port 44037
+1651767985455	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1651776366228	geckodriver	INFO	Listening on 127.0.0.1:39501
+1651776366614	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "58781" "-no-remote" "-profile" "/tmp/rust_mozprofileky6AoG"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1651776367322	Marionette	INFO	Marionette enabled
+DevTools listening on ws://localhost:58781/devtools/browser/99ae473e-8e55-472f-ae06-8733c605b47a
+1651776370005	Marionette	INFO	Listening on port 37877
+1651776370084	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.bestbuy.com"

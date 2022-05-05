@@ -1,0 +1,22 @@
+from selenium import webdriver
+from webdriver_manager.firefox import GeckoDriverManager
+from selenium.webdriver.common.keys import Keys
+from time import sleep
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.firefox.options import Options
+import os
+
+firefox_options = Options()
+profile = webdriver.FirefoxProfile('/home/jotate/Documents/auto/kim8jgtr.panda')
+
+driver = webdriver.Firefox(firefox_profile=profile, options=firefox_options, executable_path=GeckoDriverManager().install())
+
+
+driver.maximize_window
+driver.get('https://bestbuy.com')
+m = driver.find_element_by_class_name("search-input")
+m.send_keys("nvidia rtx")
+sleep(5)
+m.send_keys(Keys.RETURN)
