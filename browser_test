@@ -1,21 +1,30 @@
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from time import sleep
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support import expected_conditions as EC
 
 driver = webdriver.Chrome('/home/jotate/Documents/auto/chromedriver')
-
+driver.maximize_window
 driver.get('https://bestbuy.com')
 m = driver.find_element_by_class_name("search-input")
 m.send_keys("nvidia rtx")
 m.send_keys(Keys.RETURN)
 
-add_to_cart = driver.find_elements_by_xpath("//button[@class='c-button c-button-primary c-button-sm c-button-block c-button-icon c-button-icon-leading add-to-cart-button']")
+add_to_cart = driver.find_elements(By.XPATH,"//button[@class='c-button c-button-primary c-button-sm c-button-block c-button-icon c-button-icon-leading add-to-cart-button']")
 for d in add_to_cart:
-    d.location_once_scrolled_into_view
-    d.click()
-    sleep(15)
-    c = driver.find_element_by_xpath("//button[@class='c-button-link continue-shopping']")
-    c.click()
-    sleep(10)
+
+#    d.click()
+    while True:
+        try:
+            driver.WebDriverWait(driver, 20).until(EC.element_to_be_clickable((By.XPATH, "//button[@class='c-button c-button-primary c-button-sm c-button-block c-button-icon c-button-icon-leading add-to-cart-button']"))).click()
+            sleep(5)
+            driver.WebDriverWait(driver, 20).until(EC.element_to_be_clickable((By.XPATH, "//button[@class='c-button-link continue-shopping']"))).click()
+#        c = driver.find_element_by_xpath("//button[@class='c-button-link continue-shopping']")
+#        c.click()
+            sleep(10)
+        except:
+            break
 driver.find_element_by_link_text("https://bestbuy.com/cart").click()
 #driver.quit()
