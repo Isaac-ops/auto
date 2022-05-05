@@ -16,4 +16,5 @@ for d in add_to_cart:
     c = driver.find_element_by_xpath("//button[@class='c-button-link continue-shopping']")
     c.click()
     sleep(10)
+driver.find_element_by_link_text("https://bestbuy.com/cart").click()
 #driver.quit()
